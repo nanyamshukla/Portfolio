@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Nanyam Shukla | Portfolio</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio_style_1.css">
+    <link rel="stylesheet" href="bouncing_ball.css">
+    <link rel="stylesheet" href="content.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Neucha|Maven+Pro|Orbitron|Overpass|Orbitron:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="js_portfolio.js"></script>
+    <script src="header_bkg_parallax.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124604413-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124604413-2');
+    </script>
+
+</head>
+
+<body class="parallax_bkg">
+
+    <div id="load">
+        <p class="load_p" id="load_p">Loading...</p>
+    </div>
+
+    <div class="portrait_screen" id="portrait_screen">
+        <div class="portrait_hi" id="portrait_hi">
+            <img src="Images/pune.jpg" style="width: 30vw; height: 25vw; border-radius: 10%;">
+            <p style="margin: 0; font-size: 4vh; font-weight: 600; margin-top: 5vh;">Hi this is Nanyam</p>
+        </div>
+        <p id="auto_rotate_text">Please switch to <br> <strong><i>Landscape View Mode</i></strong> <br>to view my website</p>
+        <div style="position: relative; margin: auto; align-content: center; text-align: center; margin-top: 5vh;">
+            <img src="Images/auto_rotate.png" style="width: 15vw; height: 15vw;"><br>
+            <img src="Images/ptol_3_edit_2.png" style="width: 40vw; height: 30vw; margin-top: 5vh;">
+        </div>
+    </div>
+
+    <div class="body_wrapper" id="body_wrapper" style="overflow-x: hidden;">
+
+        <!--  Side MENU BAR -->
+        <div id="mySidenav" class="sidenav">
+            <div class="menu_head">
+                <div class="menu_img"></div>
+                <div class="menu_base">
+                    <p>MENU</p>
+                </div>
+            </div>
+            <a class="menu_link" id="link_1" href="#">
+                <div class="link_cover">
+                    <p> Home </p>
+                </div>
+
+            </a>
+            <a class="menu_link" id="link_2" href="#div1">
+                <div class="link_cover">
+                    <p>So...Who Am I ? </p>
+                </div>
+
+            </a>
+            <a class="menu_link" id="link_3" href="#info_3">
+                <div class="link_cover">
+                    <p> My Projects </p>
+                </div>
+
+            </a>
+            <a class="menu_link" id="link_4" href="#looking_for_head">
+                <div class="link_cover">
+                    <p> Looking For </p>
+                </div>
+
+            </a>
+            <a class="menu_link" id="link_5" href="#footer">
+                <div class="link_cover">
+                    <p> Contact-Me </p>
+                </div>
+
+            </a>
+        </div>
+        <div class="menu_closer" id="menu_closer" onclick="toggleFunc()"></div>
+
+        <!--   Main MENU BAR  -->
+        <div class="head_nav" id="head_nav">
+            <div class="head_icons" id="head_icons">
+
+                <div id="menu_icon" class="menu_icon" onclick="toggleFunc()">
+                    <div class="b1" id="b1"></div>
+                    <div class="b2" id="b2"></div>
+                    <div class="b3" id="b3"></div>
+                </div>
+
+                <div id="ns_logo" class="ns_logo">
+                    <a id="jump_div1" href="index.html" target="_self">
+                        <img id="logo_image" src="PORTFOLIO_LOGOS/favicon.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  End of Main Menu Bar  -->
+
+        <!--  Top Scroll Position Indicator  -->
+        <div class="scroll_indic">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <!--  End of Top Scroll Position Indicator  -->
+
+        <!--  Social Media Icons Div  -->
+        <div class="social_media" id="social_media">
+            <a href="https://github.com/nanyamshukla" target="_blank">
+                <div class="social_container" style="background-color: white;">
+                    <i class="fab fa-github social_icon" style="color: black;"></i>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/nanyam-shukla/" target="_blank" id="linkedin">
+                <div class="social_container" style="background-color: #0077B5;">
+                    <i class="fab fa-linkedin-in social_icon" style="color: white;"></i>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/NanyamShukla" target="_blank">
+                <div class="social_container" style=" background-color: white;">
+                    <i class="fab fa-facebook-f social_icon" style="color: #3B5998;"></i>
+                </div>
+            </a>
+            <a href="mailto:nanyamshukla@gmail.com" onclick="window.open('https://plus.google.com/u/0/103317477342143178485')">
+                <div class="social_container" style="background-color: rgb(196, 40, 40);">
+                    <i class="fas fa-envelope social_icon" style="color: white;"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/nanyamshukla/" target="_blank" id="instagram">
+                <div class="social_container" style=" background-color: white;">
+                    <i class="fab fa-instagram social_icon" style="color: rgb(238, 72, 99)"></i>
+                </div>
+            </a>
+        </div>
+        <!--  End of Social Media Icons Div  -->
+
+        <!--  Scroll Down Button Div  -->''
+        <div class="scroll_btn" id="scroll_btn" onclick="letscroll()">
+            <i class="fa fa-angle-double-down scroll_icon" id="scroll_icon"></i>
+        </div>
+        <!--  End of Scroll Down Button Div  -->''
+
+        <!--  Header Page Beginning  -->
+        <div id="header">
+            <div class="name" id="name">
+                <p id="name_p">
+                    <span id="name_span">NANYAM SHUKLA</span>
+                </p>
+            </div>
+            <div id="ballWrapper">
+                <a style="color: rgba(0, 0, 0, 0.651);">
+                    <div id="ball" onclick="smoothScroll(document.getElementById('div1'))">
+                        <p id="ball_text" class="animated infinite pulse">SCROLL
+                            <br> DOWN
+                            <br>
+                            <i class="fa fa-caret-down" style="font-size: 1.5vw;position: absolute; left: 35%;"></i>
+                        </p>
+                        <div id="ballShadow"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--  End of Header Page  -->
+
+        <!--  Beginning of content pages  -->
+        <div id="div1" style="height: 10vh; background-color: rgb(81, 85, 85); border: solid black; border-width: 2.5vh; transition: 0.5s all ease-out;"></div>
+
+        <!--  Who Is Nanyam ? Section-->
+        <div class="parallax" style="height: 75vh; background-image: url(Images/abstract_6.jpg);"></div>
+        <div style="width: 100%; height: 75vh;">
+            <div class="who" id="who">
+                <p>So...Who Am I ?</p>
+            </div>
+            <div class="my_intro">
+                <div class="my_info" id="my_info">
+                    <p class="my_info_p" id="my_info_p"></p>
+                </div>
+                <div class="my_img" id="my_img" onclick="my_info_visible()"></div>
+                <div class="click_me" id="click_me" onclick="my_info_visible()">
+                    <p>Click Here</p>
+                </div>
+            </div>
+
+        </div>
+        <!--  End of Who Is Nanyam ? Section  -->
+
+        <div class="scroll_coding_skill" id="scroll_coding_skill"></div>
+
+        <!--  Beginning of My Coding Skillset Div  -->
+        <div style="height: 50vh; background-color: rgb(2, 7, 10); border: solid black thick; background-image: url(Images/shade6.jpg); background-size: 100% 100%;">
+
+            <div class="skill_div" id="skill_div">
+                <div class="skill_head" id="skill_head">
+                    <p>
+                        <b>My Coding Skill Set : </b>
+                    </p>
+                </div>
+                <ul>
+                    <li class="skill_sub_head sub_head_1" id="skill_sub_head_1">Web Dev :</li>
+                    <li class="skill_info info_1 web_d"> HTML-5 </li>
+                    <li class="skill_info info_2 web_d"> CSS-3 </li>
+                    <li class="skill_info info_3 web_d" id="info_3"> JavaScript </li>
+
+                    <li class="skill_sub_head sub_head_2" id="skill_sub_head_2">Programming :</li>
+                    <li class="skill_info info_4 prog"> C </li>
+                    <li class="skill_info info_5 prog"> C + + </li>
+                    <li class="skill_info info_6 prog"> Python-3 </li>
+
+                    <li class="skill_sub_head sub_head_3" id="skill_sub_head_3">Other :</li>
+                    <li class="skill_info info_7 other" id="info_7"> Git </li>
+                    <li class="skill_info info_8 other"> GitHub </li>
+                    <li class="skill_info info_9 other"> MATLAB </li>
+                </ul>
+            </div>
+        </div>
+        <!--  Ending of My Coding Skillset Div  -->
+
+        <!--  Beginning of My Projects Div  -->
+        <div class="parallax" style="height:75vh; background-image: url(Images/typing_10.jpg);"></div>
+        <div style="width: 100%; height: 75vh;">
+            <div class="my_project_head" id="my_project_head">
+                <p>My Projects</p>
+            </div>
+            <div class="my_project_intro">
+                <div class="my_project_info" id="my_project_info">
+                    <div class="pro_container">
+                        <div class="pro pro_1" id="pro">
+                            <div class="pro_head_holder" id="pro_head_holder" onclick="turn(0)">
+                                <div class="pro_img" style="background-image: url(Images/Project_Images/login_auth.png);"></div>
+                                <div class="pro_name">
+                                    <p>
+                                        Login Authentication Checker Ver.2<br>
+                                    </p>
+                                    <span>(Jun,18 - Jul,18)</span>
+                                </div>
+                                <div class="project_indic"></div>
+                            </div>
+                            <div class="pro_data">
+                                Using Angular :
+                                <li>Applied the functionality of version.1 using Angular framework instead of JavaScript</li>
+                                <li>Extended the applicability of checking for only a single page login authentication to
+                                    authentication to all pages of a directory using O Auth-Guard technique.
+                                </li>
+                                <a href="https://github.com/nanyamshukla/Firebase_Angular_Auth" target="_blank" style="color:aqua;">Click
+                                    here for project</a>
+                            </div>
+                        </div>
+
+                        <div class="pro" id="pro">
+                            <div class="pro_head_holder" id="pro_head_holder" onclick="turn(1)">
+                                <div class="pro_img" style="background-image: url(Images/Project_Images/login_auth.png);"></div>
+                                <div class="pro_name">
+                                    <p>
+                                        Login Authentication Checker Ver.1<br>
+                                    </p>
+                                    <span>(Jun,18 - Jul,18)</span>
+                                </div>
+                                <div class="project_indic"></div>
+                            </div>
+                            <div class="pro_data">
+                                Using JavaScript :
+                                <li>Built code to allow users to login to a particular web page URL with correct Email ID
+                                    and Password</li>
+                                <li>Redirect the user to login page if trying to access that page while not in logged-in
+                                    state
+                                </li>
+                                <li>Auto logout user back to login page after a preset time of inactivity</li>
+                                <li> Displayed a button for a preset time before auto-logout to prevent logout and continue
+                                    the session again for the preset time
+                                </li>
+                                <a href="https://github.com/nanyamshukla/Firebase_JavaScript_Auth" target="_blank" style="color:aqua;">
+                                    Click here for project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="pro" id="pro">
+                            <div class="pro_head_holder" id="pro_head_holder" onclick="turn(2)">
+                                <div class="pro_img" style="background-image: url(Images/Project_Images/elec_pro.jpg);"></div>
+                                <div class="pro_name">
+                                    <p>
+                                        Object Speed Checker<br>
+                                    </p>
+                                    <span>(Oct,17 - Nov,17)</span>
+                                </div>
+                                <div class="project_indic"></div>
+                            </div>
+                            <div class="pro_data">
+                                An Arduino Uno Circuit building and coding project :
+                                <li>Designed a real life object speed checking hardware circuit </li>
+                                <li>Built and tested on-board hardware circuit composed of various different I.Cs </li>
+                                <li>Developed software for working of circuit using Arduino Uno board circuitry and coding
+                                </li>
+                            </div>
+                        </div>
+                        <div class="pro" id="pro">
+                            <div class="pro_head_holder" id="pro_head_holder" onclick="turn(3)">
+                                <div class="pro_img" style="background-image: url(Images/Project_Images/code_lock.jpg);"></div>
+                                <div class="pro_name">
+                                    <p>
+                                        Electronic Code Lock <br>
+                                    </p>
+                                    <span>(Apr,17 - May,17)</span>
+                                </div>
+                                <div class="project_indic"></div>
+                            </div>
+
+                            <div class="pro_data">
+                                555 Timer I.C. based project :
+                                <li>Designed an electronic lock which can be opened by a specific pattern of code</li>
+                                <li>Devised a marketable product by refining circuit shape</li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="my_project_img" id="my_project_img" onclick="my_project_visible()"></div>
+                <div class="click_me_project" id="click_me_project" onclick="my_project_visible()">
+                    <p>Click Here</p>
+                </div>
+            </div>
+        </div>
+        <!--  Ending of My Projects Div  -->
+
+        <div class="scroll_personal_skill" id="scroll_personal_skill"></div>
+
+        <!--  Beginning of My Personal Skillset Div  -->
+        <div style="height: 50vh; background-color: rgb(2, 7, 10); border: solid black thick; background-image: url(Images/shade6.jpg); background-size: 100% 100%;">
+            <div class="personal_skill_div" id="personal_skill_div">
+                <div class="personal_skill_head" id="personal_skill_head">
+                    <p>
+                        <b>Interpersonal Skill Set : </b>
+                    </p>
+                </div>
+                <ul>
+                    <!-- <li class="skill_sub_head sub_head_1" id="skill_sub_head_1">Web Dev</li> -->
+                    <li class="p_skill_info p_info_1"> Leadership </li>
+                    <li class="p_skill_info p_info_2"> Team Management </li>
+                    <li class="p_skill_info p_info_3" id="p_info_3"> Quick Learner </li>
+
+                    <!-- <li class="skill_sub_head sub_head_2" id="skill_sub_head_2">Programming</li> -->
+                    <li class="p_skill_info p_info_4"> Team Working </li>
+                    <li class="p_skill_info p_info_5"> Volunteering </li>
+                    <li class="p_skill_info p_info_6"> Public Speaking </li>
+
+                    <!-- <li class="skill_sub_head sub_head_3" id="skill_sub_head_3">Other</li> -->
+                    <li class="p_skill_info p_info_7"> Dancing </li>
+                    <li class="p_skill_info p_info_8"> Sketching </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--  Ending of My Personal Skillset Div  -->
+
+        <!--  Beginning of Looking For Div  -->
+        <div class="parallax" style="height: 75vh; background-image: url(Images/looking.jpg);"></div>
+        <div style="width: 100%; height: 75vh;">
+            <div class="looking_for_head" id="looking_for_head">
+                <p>Looking For</p>
+            </div>
+            <div class="looking_for_intro">
+                <div class="looking_for_info" id="looking_for_info">
+                    <p class="looking_for_info_p" id="looking_for_info_p"></p>
+                </div>
+                <div class="looking_for_img" id="looking_for_img" onclick="looking_for_visible()"></div>
+                <div class="click_me_looking" id="click_me_looking" onclick="looking_for_visible()">
+                    <p>Click Here</p>
+                </div>
+            </div>
+        </div>
+        <!--  Ending of Looking For Div  -->
+
+
+        <div style="height: 10vh; background-color: rgb(81, 85, 85); border: solid black; border-width: 2.5vh;"></div>
+        <!--  End of Content Pages  -->
+
+        <!--  Beginning of Thankk You Page  -->
+        <div id="footer">
+            <div class="thanks_head" id="thanks_head">
+                <p class="thanks_txt" id="thanks_txt">Thank You For
+                    <br>Visiting</p>
+            </div>
+            <div id="quote_carousel">
+                <div class="start" id="start">Made</div>
+                <div class="follow" id="follow">
+                    <span id="follow_span">with HTML-5</span>
+                </div>
+            </div>
+            <div class="social_media social_media_2" id="social_media_2">
+                <a href="https://github.com/nanyamshukla" target="_blank">
+                    <div class="social_container social_container_2" style="background-color: white;">
+                        <i class="fab fa-github social_icon" style="color: black;"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/nanyam-shukla/" target="_blank" id="linkedin">
+                    <div class="social_container social_container_2" style="background-color: #0077B5;">
+                        <i class="fab fa-linkedin-in social_icon" style="color: white;"></i>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/NanyamShukla" target="_blank">
+                    <div class="social_container social_container_2" style=" background-color: white;">
+                        <i class="fab fa-facebook-f social_icon" style="color: #3B5998;"></i>
+                    </div>
+                </a>
+                <a href="mailto:nanyamshukla@gmail.com" onclick="window.open('https://plus.google.com/u/0/103317477342143178485')">
+                    <div class="social_container social_container_2" style="background-color: rgb(196, 40, 40);">
+                        <i class="fas fa-envelope social_icon" style="color: white;"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/nanyamshukla/" target="_blank" id="instagram">
+                    <div class="social_container social_container_2" style=" background-color: white;">
+                        <i class="fab fa-instagram social_icon" style="color: rgb(238, 72, 99)"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="sign_off">
+                <p>Made with
+                    <span style="color: red; text-decoration: line-through;">love</span> a Keyboard |
+                    <i class="far fa-copyright"></i> nanyamshukla
+                </p>
+            </div>
+        </div>
+        <!--  Ending of Thank You Page  -->
+    </div>
+
+    <script src="content.js"></script>
+</body>
+
+</html>

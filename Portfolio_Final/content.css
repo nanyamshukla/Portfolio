@@ -1,0 +1,916 @@
+/*  ----  Styling of Opening Page Content Info  ----  */
+
+#name {
+    position: relative;
+    top: 20%;
+    display: table;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    /*
+    background-color: rgba(248, 254, 254, 0.1);
+    border-radius: 30%;
+    box-shadow: 0 0 3vw  rgba(211, 208, 208, 0.2);
+    */
+}
+#name_p {
+    width: -moz-max-content;
+    width: max-content;
+    white-space: nowrap;
+    background-color: rgb(34, 34, 34);
+    -webkit-box-shadow:  0vw 0.1vw 0.3vw rgba(245, 245, 245, 0.5);
+    -moz-box-shadow:  0vw 0.1vw 0.3vw rgba(245, 245, 245, 0.5);
+    box-shadow:  0vw 0.1vw 0.3vw rgba(245, 245, 245, 0.5);
+    text-align: center;
+    letter-spacing: 1.5vw;
+    word-spacing: 0vw;
+    color: rgb(242, 239, 239);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
+    line-height: 1;
+    padding: 2% 0 2% 1.25%;
+    margin: 0;
+    text-shadow: 0vw 0.3vw rgb(85, 84, 84);
+    -webkit-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-transition:ease-in-out 0.7s;
+    -o-transition:ease-in-out 0.7s;
+    -moz-transition:ease-in-out 0.7s;
+    transition:ease-in-out 0.7s;
+}
+
+#name_p:hover {
+    -webkit-box-shadow:  0vw 0.3vw 0.6vw rgba(245, 245, 245, 0.5);
+    -moz-box-shadow:  0vw 0.3vw 0.6vw rgba(245, 245, 245, 0.5);
+    box-shadow:  0vw 0.3vw 0.6vw rgba(245, 245, 245, 0.5);
+}
+#name_span {
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#quote_carousel {
+    position: relative;
+    top: 7.5%;
+    margin: auto;
+    width: 42.5%;
+    height: 7.5vh;
+    text-align:center;
+    background-color: rgb(17, 17, 17,0.8);
+    /* background-color: rgb(242, 239, 239, 0.8); */
+    font-family: "Orbitron", sans-serif;
+    font-weight:100;
+    font-size:2.5vh;
+    letter-spacing: 0.05vw;
+    border-radius: 35%;
+    overflow:hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit--perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    color: white;
+    /* box-shadow: 0 0 4vw  rgb(241, 238, 238); */
+    -webkit-box-shadow: 0 0 1vw  rgba(248, 254, 254, 0.5);
+    -moz-box-shadow: 0 0 1vw  rgba(248, 254, 254, 0.5);
+    box-shadow: 0 0 1vw  rgba(248, 254, 254, 0.5);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+/* #quote_carousel:hover {
+    background-color: rgb(17, 17, 17,0.8);
+    font-weight: 500;
+    color: rgba(248, 254, 254, 0.75);
+    box-shadow: 0 0 4vw  rgba(0, 0, 0, 1);
+} */
+.start, .follow {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    line-height: 3;
+}
+
+.start {    
+    -webkit-animation: showup 5s infinite;
+    -o-animation: showup 5s infinite;
+    -moz-animation: showup 5s infinite;
+    -ms-animation: showup 5s infinite;    
+    animation: showup 5s infinite;
+}
+
+.follow {
+    width:0;
+    -webkit-animation: reveal 5s infinite;
+    -o-animation: reveal 5s infinite;
+    -moz-animation: reveal 5s infinite;
+    -ms-animation: showup 5s infinite;
+    animation: reveal 5s infinite;
+}
+
+.follow span {
+    margin-left:-355px;
+    -webkit-animation: slidein 5s infinite;
+    -moz-animation: slidein 5s infinite;
+    -o-animation: slidein 5s infinite;
+    -ms-animation: showup 5s infinite;
+    animation: slidein 5s infinite;
+}
+
+@-webkit-keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    90% {opacity:0;}
+    100% {opacity:0;}
+}
+@-moz-keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    90% {opacity:0;}
+    100% {opacity:0;}
+}
+@-ms-keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    90% {opacity:0;}
+    100% {opacity:0;}
+}
+@-o-keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    90% {opacity:0;}
+    100% {opacity:0;}
+}
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    90% {opacity:0;}
+    100% {opacity:0;}
+}
+
+
+@-webkit-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@-moz-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@-ms-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@-o-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+
+@-webkit-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@-moz-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@-ms-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@-o-keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+
+
+@-webkit-keyframes reveal {
+    0% {opacity:0;width:0;}
+    20% {opacity:1;width:0;}
+    30% {width:auto;}
+    80% {opacity:1;}
+    90% {opacity: 0;}
+    100% {opacity:0;width:auto;}
+}
+@-moz-keyframes reveal {
+    0% {opacity:0;width:0;}
+    20% {opacity:1;width:0;}
+    30% {width:auto;}
+    80% {opacity:1;}
+    90% {opacity: 0;}
+    100% {opacity:0;width:auto;}
+}
+@-ms-keyframes reveal {
+    0% {opacity:0;width:0;}
+    20% {opacity:1;width:0;}
+    30% {width:auto;}
+    80% {opacity:1;}
+    90% {opacity: 0;}
+    100% {opacity:0;width:auto;}
+}
+@-o-keyframes reveal {
+    0% {opacity:0;width:0;}
+    20% {opacity:1;width:0;}
+    30% {width:auto;}
+    80% {opacity:1;}
+    90% {opacity: 0;}
+    100% {opacity:0;width:auto;}
+}
+@keyframes reveal {
+    0% {opacity:0;width:0;}
+    20% {opacity:1;width:0;}
+    30% {width:auto;}
+    80% {opacity:1;}
+    90% {opacity: 0;}
+    100% {opacity:0;width:auto;}
+}
+
+#who , #my_project_head , #looking_for_head {
+    position: relative;
+    display: table;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 20%;
+    margin: auto;
+    top: 0;
+    padding: 2% 3%;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+#who p , #my_project_head p , #looking_for_head p {
+    margin: 0;
+    font-size: 5vw;
+    font-weight: 800;
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+    letter-spacing: 0.1vw;
+    word-spacing: 1vw;
+    text-shadow: -0.5vw 0.4vw 0.6vw black;
+}
+/*  ---- Ending of Styling of Opening Page Content Info  ----  */
+
+
+/*  ----  Styling of Who Is Nanyam Page Content Info  ----  */
+
+.my_intro , .my_project_intro , .looking_for_intro {
+    position: relative;
+    top: 19%;
+    margin: auto;
+    width: 70vw;
+    height: 40vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.my_img , .my_project_img , .looking_for_img {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: -3.5vw;
+    left: 30vw;
+    background-color: rgba(255, 0, 0, 0.171);
+    background-image: url(Images/christ_cartoonize.jpeg);
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-box-shadow: 0vw 0.2vw 1vw black;
+    -moz-box-shadow: 0vw 0.2vw 1vw black;
+    box-shadow: 0vw 0.2vw 1vw black;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#click_me , #click_me_project , #click_me_looking {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+    background-color: rgb(43, 41, 41);
+    left: 30vw;
+    top: 6.5vw;
+    border-radius: 0 0 50% 50%; 
+    cursor: pointer;
+    opacity: 0;
+    -webkit-box-shadow: 0 0.2vw 1vw black;
+    -moz-box-shadow: 0 0.2vw 1vw black;
+    box-shadow: 0 0.2vw 1vw black;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#click_me p , #click_me_project p , #click_me_looking p {
+    font-size: 1.25vw;
+    margin: 0;
+    padding: 0.7vh 1vw 1vh;
+    text-align: center;
+    letter-spacing: 0.1vw;
+    color: whitesmoke;
+    font-family: 'Overpass', sans-serif;
+}
+#my_info , #my_project_info , #looking_for_info {
+    position: relative;
+    top: -3.5vw;
+    opacity: 0;
+    width: 60vw;
+    height: 100%;
+    float: left;
+    padding: 5vh 5vw;
+    color: whitesmoke;
+    font-size: 1.2vw;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.1vw;
+    line-height: 2;
+    background-color: rgba(32, 32, 31, 0.9);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-shadow: -0.3vw 0.3vw 0.4vw black;
+    -webkit-box-shadow: -0.2vw 0.2vw 1vw black;
+    -moz-box-shadow: -0.2vw 0.2vw 1vw black;
+    box-shadow: -0.2vw 0.2vw 1vw black;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#my_info_p, #looking_for_info_p {
+    height: 100%;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 2.3vh;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 0.1vw;
+    line-height: 2.2;
+    text-shadow: -0.3vw 0.3vw 0.4vw black;
+    overflow-y: auto;
+    -ms-overflow-y: auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*  ----  Ending of Styling of Who Is Nanyam Page Content Info  ----  */
+
+
+/*  ----  Styling of My Coding Skill Set Div Content Info  ----  */
+
+#skill_div, #personal_skill_div {
+    position: relative;
+    color: white;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#skill_head , #personal_skill_head {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#skill_head p , #personal_skill_head p {
+    position: absolute;
+    top: 37.5%;
+    left: 7.5%;
+    margin: 0;
+    font-size: 3.5vh;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.2vw;
+    color: rgb(24, 22, 22);
+    background-color: rgba(245, 245, 245, 0.82);
+    padding: 0.25% 1%;
+    border-radius: 0.5vw; 
+    text-shadow: -0.1vw 0.1vw 0.1vw rgb(24, 22, 22);
+    -webit-box-shadow: 0vw 0.2vw 1.5vw black;
+    -moz-box-shadow: 0vw 0.2vw 1.5vw black;
+    box-shadow: 0vw 0.2vw 1.5vw black;
+}
+.skill_sub_head {
+    position: absolute;
+    left: 42.5%;
+    font-size: 1.75vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25% 0.5% 0.1%;
+    color: rgba(245, 245, 245, 0.82);
+    background-color: rgb(24, 22, 22);
+    border-radius: 0.5vw; 
+    -webkit-box-shadow: 0vw 0.2vw 0.5vw black;
+    -moz-box-shadow: 0vw 0.2vw 0.5vw black;
+    box-shadow: 0vw 0.2vw 0.5vw black;
+    letter-spacing: 0.1vw;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.sub_head_1 {
+    top: 21.5%; 
+}
+.sub_head_2 {
+    top: 39.5%;
+}
+.sub_head_3 {
+    top: 57.5%; 
+}
+.skill_info , .p_skill_info{
+    position: absolute;
+    font-size: 1.65vh;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.info_1 {
+    top: 23%;
+    left: 57.5%;
+}
+.info_2 {
+    top: 23%;
+    left: 67.5%;
+}
+.info_3 {
+    top: 23%;
+    left: 77.5%;
+}
+.info_4 {
+    top: 41%;
+    left: 57.5%;
+}
+.info_5 {
+    top: 41%;
+    left: 67.5%;
+}
+.info_6 {
+    top: 41%;
+    left: 77.5%;
+}
+.info_7 {
+    top: 59%;
+    left: 57.5%;
+}
+.info_8 {
+    top: 59%;
+    left: 67.5%;
+}
+.info_9 {
+    top: 59%;
+    left: 77.5%;
+}
+
+/*  ----  Ending of Styling of My Coding Skill Set Div Content Info  ----  */
+
+/*  ---- Styling of My Projects section  ---- */
+.my_project_img {
+    background-image: url(Images/ghat.jpg);
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#my_project_info {
+    padding: 3vh 3vh;
+    float: right;
+    text-shadow: 0 0.2vw 0.2vw black;
+    font-family: 'Orbitron',sans-serif;
+    visibility: hidden;
+}
+.pro_container {
+    width: 100%;
+    height: 34vh;
+    margin: auto;
+    overflow-y: auto;
+    -ms-overflow-y: auto;
+    border: solid 0.2vh transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pro {
+    width: 100%;
+    min-height: 40%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    -webkit-box-shadow: -0.2vh -0.1vh 0.1vh rgba(25, 25, 25, 1) inset;
+    -moz-box-shadow: -0.2vh -0.1vh 0.1vh rgba(25, 25, 25, 1) inset;
+    box-shadow: -0.2vh -0.1vh 0.1vh rgba(25, 25, 25, 1) inset;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pro_head_holder {
+    height: 13vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.switch , .pro_head_holder:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.pro_img {
+    float: left;
+    width: 20%;
+    height: 13vh;
+    background-color: rgba(0, 255, 255, 0.151);
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pro_name {
+    padding: 1vh 3vh;
+    margin: 0;
+    width: 80%;
+    height: 13vh;
+    float: left;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25vw;
+    text-align: center;
+}
+.pro_name p {
+    margin: 0;
+    text-decoration: underline;
+}
+.pro_name span {
+    font-size: 1vw;
+}
+.project_indic {
+    position: relative;
+    left: 52vw;
+    top: 5vh;
+    width: 0.75vw;
+    height: 0.75vw;
+    border: solid white;
+    border-width: 0 0.1vw 0.1vw 0;
+    -webkit-transform: rotate(45deg);
+    -webkit-o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.pro_data {
+    margin: 0;
+    padding: 2vh 3vh;
+    display: none;
+    font-size: 1vw;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vw;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0.75vw grey;
+    -moz-box-shadow: inset 0 0 0.75vw grey;
+    box-shadow: inset 0 0 0.75vw grey; 
+    border-radius: 1vw;
+    border-color: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: whitesmoke; 
+    border-radius: 1vw;
+}
+
+/* width */
+::-moz-scrollbar {
+    width: 1vw;
+}
+/* Track */
+::-moz-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0.75vw grey;
+    -moz-box-shadow: inset 0 0 0.75vw grey;
+    box-shadow: inset 0 0 0.75vw grey; 
+    border-radius: 1vw;
+    border-color: black;
+}
+/* Handle */
+::-moz-scrollbar-thumb {
+    background: whitesmoke; 
+    border-radius: 1vw;
+}
+
+
+/*  ----  Styling of Interpersonal Skill Set Div  ----  */
+
+#personal_skill_head p {
+    left: 3.5%;
+    font-size: 3vh;
+    padding: 0.5% 1%;
+}
+.p_skill_info {
+    font-size: 1.75vh;
+    letter-spacing: 0.1vw;
+}
+.p_info_1 {
+    top: 25%;
+    left: 45%;
+}
+.p_info_2 {
+    top: 42.55%;
+    left: 45%;
+}
+.p_info_3 {
+    top: 60%;
+    left: 45%;
+}
+.p_info_4 {
+    top: 25%;
+    left: 62.5%;
+}
+.p_info_5 {
+    top: 42.5%;
+    left: 62.5%;
+}
+.p_info_6 {
+    top: 60%;
+    left: 62.5%;
+}
+.p_info_7 {
+    top: 25%;
+    left: 80%;
+}
+.p_info_8 {
+    top: 42.5%;
+    left: 80%;
+}
+
+
+/*  ---- Styling of Looking For Section  ---- */
+.looking_for_img {
+    background-image: url(Images/pune.jpg);
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#looking_for_info {
+    background-color: rgba(32, 32, 31, 0.65);
+}
+
+/*  ----  Styling of Thank You Section  ----  */
+.thanks_head {
+    position: relative;
+    top: 10%;
+    width: 80%;
+    margin: auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+.thanks_txt {
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    font-family: 'Orbitron',sans-serif;
+    font-weight: 700;
+    word-spacing: 1vw;
+    letter-spacing: 0.1vw;
+    line-height: 1.25;
+    text-shadow: black -0.5vw 0.4vw 0.6vw;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(0,0);
+    -webkit-o-transform: scale(0,0);
+    -ms-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    transform: scale(0,0);
+}
+
+.sign_off {
+    position: absolute;
+    width: 100%;
+    bottom: 2.5%;
+}
+.sign_off p {
+    width: -moz-fit-content;
+    display: table;
+    width: fit-content;
+    color: black;
+    font-size: 1vw;
+    font-family: 'Orbitron',sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1vw;
+    background-color: white;
+    padding: 0.2vh 0.5vw;
+    border: solid thin grey;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+/*   Beginning of Media Queries   */
+
+@media only screen and (min-height: 351px) and (max-height: 450px) {
+    #skill_head p , #personal_skill_head p {
+        top: 32.5%;
+    }
+    .sub_head_1 {
+        top: 17.5%; 
+    }
+    .sub_head_2 {
+        top: 35.5%;
+    }
+    .sub_head_3 {
+        top: 53.5%; 
+    }
+    .info_1, .info_2, .info_3 {
+        top: 19%;
+    }
+    .info_4, .info_5, .info_6 {
+        top: 37%;
+    }
+    .info_7, .info_8, .info_9 {
+        top: 55%;
+    }
+    .p_info_1, .p_info_4, .p_info_7 {
+        top: 19%;
+    }
+    .p_info_2, .p_info_5, .p_info_8 {
+        top: 36.5%;
+    }
+    .p_info_3, .p_info_6 {
+        top: 54%;
+    }
+    #personal_skill_head p {
+        left: 7.5%;
+        top: 34%;
+        font-size: 3vh;
+    }
+    .p_skill_info {
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    #skill_head p {
+        left: 2.5%;
+    }
+    #skill_head p , #personal_skill_head p {
+        top: 31.5%;
+    }
+    .skill_sub_head {
+        left: 40%;
+    }
+    .sub_head_1 {
+        top: 16.5%; 
+    }
+    .sub_head_2 {
+        top: 34.5%;
+    }
+    .sub_head_3 {
+        top: 52.5%; 
+    }
+    .info_1, .info_2, .info_3 {
+        top: 18%;
+    }
+    .info_4, .info_5, .info_6 {
+        top: 36%;
+    }
+    .info_7, .info_8, .info_9 {
+        top: 54%;
+    }
+    .p_info_1, .p_info_4, .p_info_7 {
+        top: 19%;
+    }
+    .p_info_2, .p_info_5, .p_info_8 {
+        top: 36.5%;
+    }
+    .p_info_3, .p_info_6 {
+        top: 54%;
+    }
+    #personal_skill_head p {
+        left: 5%;
+        top: 34%;
+        font-size: 3vh;
+    }
+    .p_skill_info {
+        font-size: 2vh;
+    }
+    
+}
+
+
+
+@media screen and (max-aspect-ratio: 7/5) {
+    #my_info_p, #looking_for_info_p {
+        font-size: 1.9vh;
+        line-height: 2.65;
+    }
+    #skill_head p {
+        top: 40.5%;
+        left: 3.5%;
+        font-size: 3vh;
+    }
+    .skill_sub_head {
+        left: 40%;
+    }
+    .sub_head_1 {
+        top: 25.5%; 
+    }
+    .sub_head_2 {
+        top: 43.5%;
+    }
+    .sub_head_3 {
+        top: 61.5%; 
+    }
+    .info_1, .info_2, .info_3 {
+        top: 27%;
+    }
+    .info_4, .info_5, .info_6 {
+        top: 45%;
+    }
+    .info_7, .info_8, .info_9 {
+        top: 63%;
+    }
+}
+
+
+@media only screen and (max-height: 450px) {
+	#ballWrapper {
+		top: 40vh;
+    }
+    #load_p {
+        top: 15vh;
+    }
+}
